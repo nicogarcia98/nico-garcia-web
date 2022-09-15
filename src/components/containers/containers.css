@@ -3,13 +3,17 @@
   margin: 20px;
   height: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
 
 .text-container {
   max-width: 50%;
+}
+
+h1 {
+  color: #e14631;
 }
 
 .about-me img {
@@ -32,11 +36,32 @@
 
 .skill-container {
   width: 90px;
-  height: 90px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.recognition {
+  align-items: flex-end;
+}
+.recognition-text {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: -80px;
+  padding: 0px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 2px black;
+  background-color: #ffd54f;
+  white-space: break-spaces;
+  text-align: center;
+  color: black;
+}
+.recognition:hover .recognition-text {
+  display: block;
 }
 
 .icon-container {
@@ -60,5 +85,20 @@
 
 .skill-types-list {
   display: flex;
-  gap: 20px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.clarifications-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.clarification {
+  margin: 20px 0px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
 }

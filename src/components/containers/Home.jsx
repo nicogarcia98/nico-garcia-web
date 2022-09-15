@@ -1,25 +1,18 @@
 import React, { useEffect } from "react";
 import "./containers.css";
 import CV from "../../assets/cv1.jpg";
+import StarsIcon from "@mui/icons-material/Stars";
 import reactIcon from "../../assets/react-icon.svg";
 import ExperienceCard from "../cards/ExperienceCard";
 
 import { proyectos, skillTypes, skills } from "../../services/data.js";
+import { amber, grey } from "@mui/material/colors";
 
 export default function Home() {
-  useEffect(() => {
-    skills.sort((a, b) => {
-      let comparison = 0;
-      if (a.level == "Global") {
-        comparison = -1;
-      }
-      if (b.level == "Global") {
-        comparison = 1;
-      }
+  const recognitionColor = amber[300];
+  const wantToWorkColor = grey[200];
 
-      return comparison;
-    });
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className="container">
@@ -27,8 +20,15 @@ export default function Home() {
         <div className="text-container">
           <h1>I'm Nicolas Garcia</h1>
           <p>
-            Soy desarrollador de software y este es mi portfolio. Acá se
-            encuentra todo mi viaje como developer
+            Desde que elegí la especialidad de "Técnico en Informática" en el
+            secundario estoy desarrollandome en el mundo IT.<br></br> La
+            tecnología es algo que me encanta. Llevo mas de 2 años desarrollando
+            software con distintos equipos de desarrollo. Adaptandome
+            eficientemente a cada grupo.<br></br> Como persona motivada y
+            proactiva, soy capaz de adaptarme a cualquier circunstancia dando lo
+            mejor de mi y con el mejor humor. Fomento valores como el trabajo en
+            equipo y el compañerismo. Me considero una persona que sabe
+            aprender.
           </p>
         </div>
         <img src={CV} />
@@ -39,17 +39,52 @@ export default function Home() {
           <ul className="skills-list">
             {skills
               .filter((x) => x.level != "Basic")
-              .map((skill) => {
+              .map((skill, index) => {
                 return (
-                  <li className="skill-container">
-                    <div class="icon-container">
+                  <li key={index} className="skill-container">
+                    <div style={{ height: "20px", whidth: "100%" }}>
+                      {skill.recognition ? (
+                        <span className="recognition">
+                          <StarsIcon
+                            sx={{ color: recognitionColor }}
+                            fontSize="small"
+                          />
+                          <span className="recognition-text">
+                            {skill.recognitionText}
+                          </span>
+                        </span>
+                      ) : (
+                        <></>
+                      )}
+                      {skill.wantToWork ? (
+                        <span className="recognition">
+                          <StarsIcon
+                            sx={{ color: wantToWorkColor }}
+                            fontSize="small"
+                          />
+                        </span>
+                      ) : (
+                        <></>
+                      )}
+                    </div>
+                    <div className="icon-container">
                       <img src={skill.src} style={{ maxWidth: "50px" }} />
                     </div>
-                    <span>{skill.name}</span>
+                    <span style={{ maxHeight: "30px" }}>{skill.name}</span>
                   </li>
                 );
               })}
           </ul>
+          <div className="clarifications-container">
+            <div className="clarification">
+              <StarsIcon sx={{ color: recognitionColor }} fontSize="small" />
+              <span>Reconocimientos</span>
+            </div>
+            <div className="clarification">
+              <StarsIcon sx={{ color: wantToWorkColor }} fontSize="small" />
+              <span>Deseo Trabajar</span>
+            </div>
+          </div>
         </div>
       </div>
       <div className="experience">{/* <ExperienceCard /> */}</div>
