@@ -1,0 +1,49 @@
+.Header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e14631;
+  border-radius: 8px;
+}
+.Header span {
+  margin-left: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.tab-menu a {
+  margin: 0px 20px;
+  cursor: pointer;
+  text-decoration: underline rgba(0, 0, 0, 0);
+  transition: text-decoration 200ms;
+}
+
+.tab-menu a:hover {
+  text-decoration-color: black;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.logo-container span:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container span:last-child {
+  margin: 0px 10px;
+}
+
+.footer {
+  height: 430px;
+  background-color: red;
+}
