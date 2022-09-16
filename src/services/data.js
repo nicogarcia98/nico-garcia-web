@@ -114,3 +114,33 @@ export const skills = [
 ];
 
 export const skillTypes = ["Global", "Advanced", "Middle", "Basic"];
+
+export const experiences = [
+  {
+    company: "Recursiva",
+    position: "Software Developer",
+    description:
+      "Software Factory. Soluciones combinando una fuerte vocación de servicio con una búsqueda permanente por la innovación tecnológica.\n Trabajo en equipo de desarrollo con diseñadores, QA testers, desarrolladores y proyect leader.",
+    startDate: "Abril/2022",
+    endDate: "Actualidad",
+    img: "",
+  },
+  {
+    company: "eon6",
+    position: "Software Developer Junior",
+    description:
+      "Software Factory. Soluciones combinando una fuerte vocación de servicio con una búsqueda permanente por la innovación tecnológica.\n Trabajo en equipo de desarrollo con diseñadores, QA testers, desarrolladores y proyect leader.",
+    startDate: "Julio/2021",
+    endDate: "Abril/2022",
+    img: "",
+  },
+  {
+    company: "Fichap",
+    position: "Frontend Software Developer Freelance",
+    description:
+      "Software Factory. Soluciones combinando una fuerte vocación de servicio con una búsqueda permanente por la innovación tecnológica.\n Trabajo en equipo de desarrollo con diseñadores, QA testers, desarrolladores y proyect leader.",
+    startDate: "Noviembre/2021",
+    endDate: "Enero/2022",
+    img: "",
+  },
+];

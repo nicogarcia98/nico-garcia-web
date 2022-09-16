@@ -5,7 +5,12 @@ import StarsIcon from "@mui/icons-material/Stars";
 import reactIcon from "../../assets/react-icon.svg";
 import ExperienceCard from "../cards/ExperienceCard";
 
-import { proyectos, skillTypes, skills } from "../../services/data.js";
+import {
+  proyectos,
+  skillTypes,
+  skills,
+  experiences,
+} from "../../services/data.js";
 import { amber, grey } from "@mui/material/colors";
 
 export default function Home() {
@@ -70,7 +75,9 @@ export default function Home() {
                     <div className="icon-container">
                       <img src={skill.src} style={{ maxWidth: "50px" }} />
                     </div>
-                    <span style={{ maxHeight: "30px" }}>{skill.name}</span>
+                    <span style={{ maxHeight: "30px", whiteSpace: "nowrap" }}>
+                      {skill.name}
+                    </span>
                   </li>
                 );
               })}
@@ -87,7 +94,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="experience">{/* <ExperienceCard /> */}</div>
+      <div className="experience">
+        {experiences.map((exp) => {
+          return <ExperienceCard />;
+        })}
+      </div>
     </div>
   );
 }
