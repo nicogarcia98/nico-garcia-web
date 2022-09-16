@@ -14,6 +14,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: true,
     src: require("../assets/react-icon.svg").default,
+    companies: ["eon6", "Fichap"],
   },
   {
     name: "React Native",
@@ -22,6 +23,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: true,
     src: require("../assets/react-icon.svg").default,
+    companies: ["eon6"],
   },
   {
     name: "Angular",
@@ -30,6 +32,7 @@ export const skills = [
     recognitionText: "Reconocimiento de Tech Leader - Proyect Leader",
     wantToWork: false,
     src: require("../assets/angular-icon.svg").default,
+    companies: ["eon6", "Recursiva"],
   },
   {
     name: "HTML",
@@ -38,6 +41,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/html-icon.svg").default,
+    companies: [],
   },
   {
     name: "Javascript",
@@ -46,6 +50,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/javascript-icon.svg").default,
+    companies: [],
   },
   {
     name: "CSS",
@@ -54,6 +59,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/css-icon.svg").default,
+    companies: [],
   },
   {
     name: "Next.JS",
@@ -62,6 +68,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/next-js-icon.svg").default,
+    companies: ["Fichap"],
   },
   {
     name: "Node.JS",
@@ -70,6 +77,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/nodejs-icon.svg").default,
+    companies: ["eon6"],
   },
   {
     name: "MySQL",
@@ -78,6 +86,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/mysql-icon.svg").default,
+    companies: ["eon6", "Recursiva"],
   },
   {
     name: "Postman",
@@ -86,6 +95,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/postman-icon.svg").default,
+    companies: ["eon6", "Recursiva"],
   },
   {
     name: "Git",
@@ -94,6 +104,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/git-icon.svg").default,
+    companies: ["eon6", "Recursiva", "Fichap"],
   },
   {
     name: "MongoDB",
@@ -102,6 +113,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/mongodb-icon.svg").default,
+    companies: [],
   },
   {
     name: ".Net Core",
@@ -110,6 +122,7 @@ export const skills = [
     recognitionText: "",
     wantToWork: false,
     src: require("../assets/net-icon.svg").default,
+    companies: ["Recursiva"],
   },
 ];
 
@@ -124,23 +137,26 @@ export const experiences = [
     startDate: "Abril/2022",
     endDate: "Actualidad",
     img: "",
+    logo: require("../assets/logo-recu.png"),
   },
   {
     company: "eon6",
     position: "Software Developer Junior",
     description:
-      "Software Factory. Soluciones combinando una fuerte vocación de servicio con una búsqueda permanente por la innovación tecnológica.\n Trabajo en equipo de desarrollo con diseñadores, QA testers, desarrolladores y proyect leader.",
+      "Startup. Desarrollo de distintas aplicaciones web y mobile. Trabajo en equipo e individual. Desarrollo de tecnologías en frontend y backend. Documentación de Tareas. Estimación de tiempos.",
     startDate: "Julio/2021",
     endDate: "Abril/2022",
     img: "",
+    logo: require("../assets/Eon6-logo.png"),
   },
   {
     company: "Fichap",
     position: "Frontend Software Developer Freelance",
     description:
-      "Software Factory. Soluciones combinando una fuerte vocación de servicio con una búsqueda permanente por la innovación tecnológica.\n Trabajo en equipo de desarrollo con diseñadores, QA testers, desarrolladores y proyect leader.",
+      "Desarrollo de nuevas funcionalidades, corrección de errores y nuevos requerimientos. Trabajo de forma individual con reuniones semanales de Avances y documentación de tareas.",
     startDate: "Noviembre/2021",
     endDate: "Enero/2022",
     img: "",
+    logo: require("../assets/fichap-logo.svg").default,
   },
 ];
