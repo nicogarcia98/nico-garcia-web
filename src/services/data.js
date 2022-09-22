@@ -11,6 +11,7 @@ export const proyectos = [
       "Progressive Web App - Aplicación para administrar y analizar semillas de Soja y Maiz. Material UI con dificultad media/alta. Router Angular. RXJS.",
     dateFrom: "04/2022",
     dateTo: "",
+    testimonios: [],
     proyectUrl: "",
     activities: [
       "Api Rest",
@@ -37,6 +38,7 @@ export const proyectos = [
       "Landing Page. Corrección de bugs, mantenimiento, nuevas funcionalidades y requerimientos. Creación de formularios.",
     dateFrom: "11/2021",
     dateTo: "01/2022",
+    testimonios: [],
     proyectUrl: "",
     activities: [
       "Formularios",
@@ -57,6 +59,7 @@ export const proyectos = [
       "Desarrollo desde 0 de panel admin para organizar la infraestructura de la startup. Material UI y creación d e Api y backend",
     dateFrom: "10/2021",
     dateTo: "04/2022",
+    testimonios: [],
     proyectUrl: "",
     activities: [
       "Tablas multifuncionales",
@@ -77,6 +80,7 @@ export const proyectos = [
       "App Mobile IOS/Android en Angular Ionic. Modificación de perfiles, foro online, comentarios, creación de thread. ",
     dateFrom: "09/2021",
     dateTo: "04/2022",
+    testimonios: [],
     proyectUrl: "",
     activities: ["Creación de threads", "Formularios", "Endpoints"],
     tecnologies: ["Git", "Angular", "Node.JS", "MySQL"],
@@ -91,6 +95,7 @@ export const proyectos = [
       "Panel de administración de Empresa Fumigadora. Formularios de alto nivel. Creación de ordenes, manejo de Rutas, dashborad",
     dateFrom: "01/2022",
     dateTo: "04/2022",
+    testimonios: [],
     proyectUrl: "",
     activities: ["Formularios", "Order data", "Servicios"],
     tecnologies: ["Git", "Angular"],
@@ -105,6 +110,7 @@ export const proyectos = [
       "Maquetacion de pantallas de App Mobile de venta de combustibles. React Native + Expo",
     dateFrom: "02/2022",
     dateTo: "04/2022",
+    testimonios: [],
     proyectUrl: "",
     activities: ["Maquetación de pantallas", "Formularios"],
     tecnologies: ["Git"],
