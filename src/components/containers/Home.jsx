@@ -12,6 +12,7 @@ import {
   experiences,
 } from "../../services/data.js";
 import { amber, grey } from "@mui/material/colors";
+import SliderCard from "../cards/SliderCard";
 
 export default function Home() {
   const recognitionColor = amber[300];
@@ -96,9 +97,13 @@ export default function Home() {
       </div>
       <div className="experience">
         <h1>Experiencia Profesional</h1>
-        {experiences.map((exp) => {
-          return <ExperienceCard experience={exp} />;
+        {experiences.map((exp, index) => {
+          return <ExperienceCard key={index} experience={exp} />;
         })}
+      </div>
+      <div className="proyects">
+        <h1>Proyectos</h1>
+        <SliderCard proyectos={proyectos}></SliderCard>
       </div>
     </div>
   );

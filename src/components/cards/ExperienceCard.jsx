@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { ExpandMoreIcon } from "@mui/icons-material";
 import React, { useState } from "react";
-import "./cards.css";
+import "./cards.scss";
 import "../containers/containers.css";
 import { skills } from "../../services/data";
 

@@ -1,0 +1,141 @@
+.proyect-card {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: black;
+}
+
+.carousel {
+  width: 80%;
+  height: 500px;
+}
+
+.experience-card-container .description {
+  color: white;
+  margin: 10px 0px;
+  background-color: #313638;
+}
+.experience-card-container .description .description-text {
+  max-width: 600px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.description .job-position {
+  font-size: 30px;
+  margin: 0px 0px 10px 0px;
+  color: #e14631;
+}
+
+.collapse {
+  transition: height 3000ms;
+}
+
+.experience-card-container:hover {
+  box-shadow: 0px 2px 8px 3px #e14631;
+  transform: translateY(-3px);
+  transition: transform 300ms;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: end;
+  margin: 0px 30px;
+}
+
+.proyect-container {
+  margin: 60px;
+  height: 500px;
+}
+
+.paper-proyect {
+  margin: 0px 10px;
+}
+
+.slick-prev:before {
+  color: #e14631 !important;
+}
+.slick-next:before {
+  color: #e14631 !important;
+}
+
+.slick-initialized .slick-slide {
+  height: 400px;
+  div:first-child {
+    height: calc(100% - 27px);
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+
+.box {
+  border-radius: 8px;
+  height: 100%;
+  box-shadow: 0px 0px 4px #e14631;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2 {
+    margin: 30% 0px;
+    color: #e14631;
+    text-align: center;
+    transition: margin 0.5s ease-out;
+  }
+  img {
+    opacity: 1;
+    object-fit: contain;
+    transition: opacity 0.5s ease-out;
+  }
+}
+
+.overlay {
+  height: calc(100% - 100px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  line-height: 200px;
+  color: #fff;
+  transform: translateY(calc(100% + 100px));
+  transition: transform 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  p {
+    padding: 20px;
+  }
+}
+
+.img-container {
+  display: flex;
+  justify-content: end !important;
+  padding: 10px;
+  height: 100%;
+  max-height: 100px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.box:hover {
+  h2 {
+    margin: 20px;
+  }
+  img {
+    opacity: 0;
+  }
+  .overlay {
+    transform: translateY(100px);
+  }
+}
+
+
+
+
