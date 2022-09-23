@@ -2,6 +2,7 @@ import React from "react";
 import "./cards.scss";
 import CV from "../../assets/cv1.jpg";
 import { Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function ProyectCard({ proyect }) {
   return (
@@ -14,7 +15,13 @@ export default function ProyectCard({ proyect }) {
         <div className="overlay">
           <span>
             <Typography>{proyect.description}</Typography>
-            <Button>+ Informacion</Button>
+            <Button
+              component={Link}
+              to={"/proyect/" + proyect?.id}
+              sx={{ color: "#e14631" }}
+            >
+              + Información
+            </Button>
           </span>
         </div>
       </div>
