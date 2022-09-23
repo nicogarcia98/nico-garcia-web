@@ -3,6 +3,8 @@ import React from "react";
 export const proyectos = [
   {
     name: "Good Seeds",
+    id: "good-seed",
+    type: "web",
     logo: require("../assets/logo-goodseed.svg").default,
     company: "Recursiva",
     repository: "",
@@ -13,6 +15,10 @@ export const proyectos = [
     dateTo: "",
     testimonios: [],
     proyectUrl: "",
+    images: [
+      require("../assets/proyects/CYM.jpg"),
+      require("../assets/proyects/notes.jpg"),
+    ],
     activities: [
       "Api Rest",
       "Manejo de filtros",
@@ -30,6 +36,8 @@ export const proyectos = [
   },
   {
     name: "Fichap Web",
+    id: "fichap-web",
+    type: "web",
     logo: require("../assets/fichap-logo.svg").default,
     company: "Fichap",
     repository: "",
@@ -40,6 +48,10 @@ export const proyectos = [
     dateTo: "01/2022",
     testimonios: [],
     proyectUrl: "",
+    images: [
+      require("../assets/proyects/fichap.jpg"),
+      require("../assets/proyects/fichap1.jpg"),
+    ],
     activities: [
       "Formularios",
       "Transiciones",
@@ -51,6 +63,8 @@ export const proyectos = [
   },
   {
     name: "eon6 Panel Admin",
+    id: "eon6-panel-admin",
+    type: "web",
     logo: require("../assets/Eon6-logo.png"),
     company: "eon6",
     repository: "",
@@ -61,6 +75,7 @@ export const proyectos = [
     dateTo: "04/2022",
     testimonios: [],
     proyectUrl: "",
+    images: [""],
     activities: [
       "Tablas multifuncionales",
       "Endpoints",
@@ -68,10 +83,12 @@ export const proyectos = [
       "Login/Logout",
       "Servicios",
     ],
-    tecnologies: ["Git"],
+    tecnologies: ["Git", "React", "Node.Js"],
   },
   {
     name: "La Corriente",
+    id: "la-corriente",
+    type: "mobile",
     logo: require("../assets/la-corriente.png"),
     company: "eon6",
     repository: "",
@@ -82,11 +99,17 @@ export const proyectos = [
     dateTo: "04/2022",
     testimonios: [],
     proyectUrl: "",
+    images: [
+      require("../assets/proyects/la-corriente.jpeg"),
+      require("../assets/proyects/la-corriente1.jpeg"),
+    ],
     activities: ["Creación de threads", "Formularios", "Endpoints"],
     tecnologies: ["Git", "Angular", "Node.JS", "MySQL"],
   },
   {
     name: "Prometeo ERP",
+    id: "prometeo-erp",
+    type: "web",
     logo: require("../assets/logo-prometeo.svg").default,
     company: "eon6",
     repository: "",
@@ -97,11 +120,17 @@ export const proyectos = [
     dateTo: "04/2022",
     testimonios: [],
     proyectUrl: "",
+    images: [
+      require("../assets/proyects/prometeo.jpg"),
+      require("../assets/proyects/prometeo1.jpg"),
+    ],
     activities: ["Formularios", "Order data", "Servicios"],
-    tecnologies: ["Git", "Angular"],
+    tecnologies: ["Git", "Angular", ".Net core"],
   },
   {
     name: "Gulf App",
+    id: "gulf-app",
+    type: "mobile",
     logo: require("../assets/gulf.jpg"),
     company: "eon6",
     repository: "",
@@ -112,8 +141,12 @@ export const proyectos = [
     dateTo: "04/2022",
     testimonios: [],
     proyectUrl: "",
+    images: [
+      require("../assets/proyects/gulf.jpeg"),
+      require("../assets/proyects/gulf1.jpeg"),
+    ],
     activities: ["Maquetación de pantallas", "Formularios"],
-    tecnologies: ["Git"],
+    tecnologies: ["Git", "React Native"],
   },
 ];
 export const skills = [

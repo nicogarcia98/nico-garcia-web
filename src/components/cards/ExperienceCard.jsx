@@ -11,7 +11,7 @@ import {
 import { ExpandMoreIcon } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./cards.scss";
-import "../containers/containers.css";
+import "../containers/containers.scss";
 import { skills } from "../../services/data";
 
 export default function ExperienceCard({ experience }) {

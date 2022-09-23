@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #e14631;
+  background-color: #313638;
   border-radius: 8px;
 }
 .Header span {
@@ -16,12 +16,13 @@
 .tab-menu a {
   margin: 0px 20px;
   cursor: pointer;
-  text-decoration: underline rgba(0, 0, 0, 0);
+  color: white;
+  text-decoration: underline rgba(255, 255, 255, 0);
   transition: text-decoration 200ms;
 }
 
 .tab-menu a:hover {
-  text-decoration-color: black;
+  text-decoration-color: white;
 }
 
 .logo-container {

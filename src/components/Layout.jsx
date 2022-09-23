@@ -1,10 +1,9 @@
 import React from "react";
-import Footer from "./Footer";
 import Header from "./Header";
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <div style={{ position: "relative", height: "100%" }}>
       <Header />
       {children}
     </div>

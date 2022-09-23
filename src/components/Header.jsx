@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import CodeIcon from "@mui/icons-material/Code";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
-  const [option, setOption] = useState(false);
+  const [option, setOption] = useState("");
 
   const handleClick = (option) => {
     setOption(option);
@@ -18,10 +19,10 @@ export default function Header() {
         <span>Portfolio</span>
       </div>
       <div className="tab-menu">
-        <a onClick={() => handleClick("about-me")}>Sobre mí</a>
-        <a onClick={() => handleClick("proyects")}>Proyectos</a>
-        <a onClick={() => handleClick("experience")}>Experiencia</a>
-        <a onClick={() => handleClick("technologies")}>Tecnologías</a>
+        <Link to="about-me">Sobre mí</Link>
+        <Link to="proyect/good-seed">Proyectos</Link>
+        <Link to="experience">Experiencia</Link>
+        <Link to="technologies">Tecnologías</Link>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import "./containers.css";
+import React, { useEffect, useRef } from "react";
+import "./containers.scss";
 import CV from "../../assets/cv1.jpg";
 import StarsIcon from "@mui/icons-material/Stars";
 import reactIcon from "../../assets/react-icon.svg";
