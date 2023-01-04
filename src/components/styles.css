@@ -21,6 +21,10 @@
   transition: text-decoration 200ms;
 }
 
+.tab-menu-mobile {
+  display: none;
+}
+
 .tab-menu a:hover {
   text-decoration-color: white;
 }
@@ -48,4 +52,32 @@
 .footer {
   height: 430px;
   background-color: red;
+}
+
+.menu-open {
+  display: none;
+  height: 0px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1250px) {
+  .tab-menu {
+    display: none;
+  }
+  .tab-menu-mobile {
+    margin-right: 20px;
+    display: block;
+  }
+  .open-menu {
+    position: absolute;
+    right: 0px;
+    background-color: #313638;
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    transition: height 1s;
+  }
+  .open-menu a {
+    color: white;
+  }
 }
