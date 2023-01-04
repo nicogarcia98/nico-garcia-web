@@ -13,16 +13,14 @@ export default function ProyectCard({ proyect }) {
           <img src={proyect.logo}></img>
         </div>
         <div className="overlay">
-          <span>
-            <Typography>{proyect.description}</Typography>
-            <Button
-              component={Link}
-              to={"/proyect/" + proyect?.id}
-              sx={{ color: "#e14631" }}
-            >
-              + Información
-            </Button>
-          </span>
+          <Typography>{proyect.description}</Typography>
+          <Button
+            component={Link}
+            to={"/proyect/" + proyect?.id}
+            sx={{ color: "#e14631" }}
+          >
+            + Información
+          </Button>
         </div>
       </div>
     </>

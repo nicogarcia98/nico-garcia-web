@@ -10,11 +10,12 @@ export const proyectos = [
     repository: "",
     url: "https://explore-pl-frontend-stg.azurewebsites.net/login",
     description:
-      "Progressive Web App - Aplicación para administrar y analizar semillas de Soja y Maiz. Material UI con dificultad media/alta. Router Angular. RXJS.",
+      "Progressive Web App - Aplicación para administrar y analizar semillas de Soja y Maiz. Es gran proyecto para una empresa multinacional. Gracias al trabajo en equipo de 8-10 personas salió un proyecto increíble.",
     dateFrom: "04/2022",
-    dateTo: "",
+    dateTo: "11/2022",
     testimonios: [],
     proyectUrl: "",
+    demos: [require("../assets/demos/notes.webm")],
     images: [
       require("../assets/proyects/CYM.jpg"),
       require("../assets/proyects/notes.jpg"),
@@ -35,6 +36,36 @@ export const proyectos = [
     tecnologies: ["Git", ".Net Core", "Angular", "CSS", "MySQL", "Postman"],
   },
   {
+    name: "Agroapp",
+    id: "agroapp",
+    type: "mobile",
+    logo: require("../assets/agroapp-logo1.png"),
+    company: "Recursiva",
+    repository: "",
+    url: "https://play.google.com/store/apps/details?id=com.bereco.agroapp",
+    description:
+      "AgroApp te permite planificar tus aplicaciones de fitosanitarios gracias a un pronóstico del clima mejorado con una red de datos medidos en tiempo real.",
+    dateFrom: "11/2022",
+    dateTo: "",
+    testimonios: [],
+    proyectUrl: "",
+    demos: [],
+    images: [
+      require("../assets/proyects/agroapp1.jpeg"),
+      require("../assets/proyects/agroapp.jpeg"),
+    ],
+    activities: [
+      "Servicios",
+      "Google maps API",
+      "Api",
+      "Formularios",
+      "Manejo de database",
+      "Despliegue en Android/Ios",
+      "Despliegue backend via FileZilla",
+    ],
+    tecnologies: ["Git", "Ionic Angular", "PHP", "Cordova"],
+  },
+  {
     name: "Fichap Web",
     id: "fichap-web",
     type: "web",
@@ -48,6 +79,7 @@ export const proyectos = [
     dateTo: "01/2022",
     testimonios: [],
     proyectUrl: "",
+    demos: [],
     images: [
       require("../assets/proyects/fichap.jpg"),
       require("../assets/proyects/fichap1.jpg"),
@@ -75,7 +107,11 @@ export const proyectos = [
     dateTo: "04/2022",
     testimonios: [],
     proyectUrl: "",
-    images: [""],
+    demos: [],
+    images: [
+      require("../assets/proyects/eon6-panel-admin.jpg"),
+      require("../assets/proyects/eon6-panel-admin1.jpg"),
+    ],
     activities: [
       "Tablas multifuncionales",
       "Endpoints",
@@ -94,11 +130,12 @@ export const proyectos = [
     repository: "",
     url: "https://play.google.com/store/apps/details?id=com.eon6.lacorriente",
     description:
-      "App Mobile IOS/Android en Angular Ionic. Modificación de perfiles, foro online, comentarios, creación de thread. ",
+      "App Mobile IOS/Android en Ionic Angular. Modificación de perfiles, foro online, comentarios, creación de thread. ",
     dateFrom: "09/2021",
     dateTo: "04/2022",
     testimonios: [],
     proyectUrl: "",
+    demos: [],
     images: [
       require("../assets/proyects/la-corriente.jpeg"),
       require("../assets/proyects/la-corriente1.jpeg"),
@@ -120,6 +157,7 @@ export const proyectos = [
     dateTo: "04/2022",
     testimonios: [],
     proyectUrl: "",
+    demos: [],
     images: [
       require("../assets/proyects/prometeo.jpg"),
       require("../assets/proyects/prometeo1.jpg"),
@@ -141,6 +179,7 @@ export const proyectos = [
     dateTo: "04/2022",
     testimonios: [],
     proyectUrl: "",
+    demos: [],
     images: [
       require("../assets/proyects/gulf.jpeg"),
       require("../assets/proyects/gulf1.jpeg"),

@@ -1,13 +1,14 @@
 import { Container, Paper } from "@mui/material";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { proyectos, skills } from "../../services/data";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 export default function Proyect() {
   let { id } = useParams();
+  let navigate = useNavigate();
   const [proyect, setProyect] = useState(null);
   const [indexProyect, setIndexProyect] = useState();
 
@@ -17,9 +18,15 @@ export default function Proyect() {
   }, [proyect]);
 
   const nextProyect = () => {
+    navigate("../proyect/" + proyectos[proyectos.indexOf(proyect) + 1].id, {
+      replace: true,
+    });
     setProyect(proyectos[proyectos.indexOf(proyect) + 1]);
   };
   const prevProyect = () => {
+    navigate("../proyect/" + proyectos[proyectos.indexOf(proyect) - 1].id, {
+      replace: true,
+    });
     setProyect(proyectos[proyectos.indexOf(proyect) - 1]);
   };
 
@@ -31,6 +38,7 @@ export default function Proyect() {
         height: "calc(100% - 80px)",
         alignItems: "center",
       }}
+      className="animate-container"
     >
       <div className="proyect__container">
         <div className="header__proyect">
@@ -61,7 +69,14 @@ export default function Proyect() {
         <div className="body__proyect">
           <div className="description">
             <span>{proyect?.description}</span>
-            <ul>
+            {proyect?.demos?.map((demo) => {
+              return (
+                <video controls width="300" className="video-container">
+                  <source src={demo} type="video/webm"></source>
+                </video>
+              );
+            })}
+            {/*             <ul>
               {skills
                 .filter((x) => proyect?.tecnologies.includes(x.name))
                 .map((skill) => {
@@ -73,8 +88,8 @@ export default function Proyect() {
                       <span style={{ maxHeight: "30px" }}>{skill.name}</span>
                     </li>
                   );
-                })}
-            </ul>
+                })
+            </ul>*/}
           </div>
           <div
             className={`images ${proyect?.type == "mobile" ? "mobile" : "web"}`}

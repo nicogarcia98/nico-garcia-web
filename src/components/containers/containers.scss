@@ -41,11 +41,11 @@
           box-shadow: 0px 0px 3px #e14631;
           background-color: rgba($color: #e14631, $alpha: 0.05);
         }
-        &:active {
-          background-color: rgba($color: #e14631, $alpha: 0.3);
-        }
         &:focus {
           background-color: rgba($color: #e14631, $alpha: 0.15);
+        }
+        &:active {
+          background-color: rgba($color: #e14631, $alpha: 0.3);
         }
       }
       &.disabled-item {
@@ -63,15 +63,15 @@
 
   .body__proyect {
     display: flex;
-    height: 70%;
+    align-items: flex-start;
+    margin-top: 30px;
     .description {
-      padding-top: 40px;
+      padding: 40px;
       width: 50%;
-      height: 100%;
       position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       ul {
         display: grid;
@@ -83,6 +83,9 @@
         width: 80%;
         text-align: center;
       }
+      span:first-child {
+        width: 100%;
+      }
     }
     .images {
       width: 50%;
@@ -91,19 +94,21 @@
       align-items: center;
       gap: 20px;
       img {
-        transition: transform 0.3s;
-        box-shadow: 0px 0px 4px #e14631;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0px 0px 2px #e14631;
       }
       &.mobile {
         flex-direction: row;
         & img:hover {
           transform: scale(2.5) translateX(-20px);
+          box-shadow: 0px 0px 4px #e14631;
         }
       }
       &.web {
         flex-direction: column;
         & img:hover {
           transform: scale(3) translateX(-80px);
+          box-shadow: 0px 0px 4px #e14631;
         }
       }
     }
@@ -222,4 +227,45 @@ h1 {
   padding: 40px;
   background: transparent;
   gap: 10px;
+}
+
+.animate-container {
+  transition: width 3s;
+}
+
+.video-container {
+  margin-top: 30px;
+  box-shadow: 0px 0px 2px #e14631;
+  transition: box-shadow 0.3s, transform 0.3s;
+  &:hover {
+    transform: scale(1.3);
+    box-shadow: 0px 0px 4px #e14631;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1250px) {
+  //css code
+  .about-me {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-types-list {
+    flex-direction: column;
+  }
+
+  ul.skills-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    padding-inline-start: 0px;
+  }
+
+  .clarifications-container {
+    align-items: center;
+  }
 }

@@ -64,7 +64,7 @@
   div:first-child {
     height: calc(100% - 27px);
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
     justify-content: space-between;
     padding: 20px;
   }
@@ -100,7 +100,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   line-height: 200px;
   color: #fff;
   transform: translateY(calc(100% + 100px));
@@ -132,10 +132,10 @@
     opacity: 0;
   }
   .overlay {
+    color: black;
     transform: translateY(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
-
-
-
-

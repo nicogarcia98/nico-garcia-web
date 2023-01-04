@@ -95,7 +95,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="experience">
+      <div className="experience" id="exp">
         <h1>Experiencia Profesional</h1>
         {experiences.map((exp, index) => {
           return <ExperienceCard key={index} experience={exp} />;

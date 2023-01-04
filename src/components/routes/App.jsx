@@ -1,10 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../containers/Home";
-import AboutMe from "../containers/AboutMe";
+import Contact from "../containers/Contact";
 import Proyect from "../containers/Proyect";
-import Experience from "../containers/Experience";
-import Technologies from "../containers/Technologies";
 import NotFound from "../containers/NotFound";
 import Layout from "../Layout";
 
@@ -14,10 +12,8 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/proyect/:id" element={<Proyect />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/technologies" element={<Technologies />} />
           <Route element={<NotFound />} />
         </Routes>
       </Layout>

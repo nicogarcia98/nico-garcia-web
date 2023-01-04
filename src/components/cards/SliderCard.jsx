@@ -1,8 +1,6 @@
 import React from "react";
-import Carousel from "react-material-ui-carousel";
 import ProyectCard from "./ProyectCard.jsx";
 import "./cards.scss";
-import { Paper } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -53,6 +51,24 @@ export default function SliderCard({ proyectos }) {
     slidesToShow: 3,
     slidesToScroll: 1,
     className: "slider",
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
