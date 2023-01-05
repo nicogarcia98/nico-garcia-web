@@ -66,6 +66,30 @@ export default function Proyect() {
             <ArrowForwardIosIcon />
           </span>
         </div>
+        <div className="button-mobile">
+          <span
+            onClick={prevProyect}
+            tabIndex={0}
+            className={
+              proyectos[indexProyect - 1] ? "enabled-item" : "disabled-item"
+            }
+          >
+            <ArrowBackIosIcon />
+            <label>{proyectos[indexProyect - 1]?.name}</label>
+          </span>
+          <span
+            onClick={nextProyect}
+            tabIndex={0}
+            className={`${
+              proyectos[indexProyect + 1] ? "enabled-item" : "disabled-item"
+            }`}
+          >
+            <label style={{ paddingLeft: "5px" }}>
+              {proyectos[indexProyect + 1]?.name}
+            </label>
+            <ArrowForwardIosIcon />
+          </span>
+        </div>
         <div className="body__proyect">
           <div className="description">
             <span>{proyect?.description}</span>

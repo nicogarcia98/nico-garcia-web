@@ -243,6 +243,10 @@ h1 {
   }
 }
 
+.button-mobile {
+  display: none;
+}
+
 @media screen and (min-width: 300px) and (max-width: 1250px) {
   //css code
   .about-me {
@@ -272,5 +276,67 @@ h1 {
 
   .clarifications-container {
     align-items: center;
+  }
+  .header__proyect {
+    justify-content: center !important;
+    span {
+      display: none !important;
+    }
+  }
+  .body__proyect {
+    justify-content: space-between !important;
+    flex-direction: column;
+    align-items: center !important;
+    overflow: auto;
+    video,
+    img {
+      display: none;
+    }
+    .description {
+      padding: 0px !important;
+      width: 80% !important;
+    }
+  }
+
+  .button-mobile {
+    display: flex;
+    justify-content: space-between;
+    span {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      padding: 0px 8px;
+      margin: 0px 10px;
+      cursor: pointer;
+      transition: box-shadow 0.5s, transform 0.5s, background-color 0.5s;
+      label {
+        pointer-events: none;
+      }
+      &.enabled-item {
+        border: 1px solid #e14631;
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0px 0px 3px #e14631;
+          background-color: rgba($color: #e14631, $alpha: 0.05);
+        }
+        &:focus {
+          background-color: rgba($color: #e14631, $alpha: 0.15);
+        }
+        &:active {
+          background-color: rgba($color: #e14631, $alpha: 0.3);
+        }
+      }
+      &.disabled-item {
+        pointer-events: none;
+        box-shadow: 0px 0px 3px #b6b6b6;
+      }
+    }
+    span:first-child {
+      justify-content: start;
+    }
+    span:last-child {
+      justify-content: end;
+    }
   }
 }
