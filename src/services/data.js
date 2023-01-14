@@ -3,6 +3,7 @@ import React from "react";
 export const proyectos = [
   {
     name: "Good Seeds",
+    jobTitle: "Fullstack developer",
     id: "good-seed",
     type: "web",
     logo: require("../assets/logo-goodseed.svg").default,
@@ -37,6 +38,7 @@ export const proyectos = [
   },
   {
     name: "Agroapp",
+    jobTitle: "Fullstack developer mobile",
     id: "agroapp",
     type: "mobile",
     logo: require("../assets/agroapp-logo1.png"),
@@ -66,7 +68,28 @@ export const proyectos = [
     tecnologies: ["Git", "Ionic Angular", "PHP", "Cordova"],
   },
   {
+    name: "Novedades App",
+    jobTitle: "Backend developer",
+    id: "novedades-app",
+    type: "servidor",
+    logo: null,
+    company: "Recursiva",
+    repository: "",
+    url: "",
+    description:
+      "App de Notificaciones push para productos de distintos laboratorios de Sudamérica. Creación de modelo de datos, API, Microservicios. .NetCore EF",
+    dateFrom: "01/2023",
+    dateTo: "",
+    testimonios: [],
+    proyectUrl: "",
+    demos: [],
+    images: [],
+    activities: ["Modelado de datos", "Api", "Administración de database"],
+    tecnologies: ["Git", ".Net Core", "Entity Framework", "React Native"],
+  },
+  {
     name: "Fichap Web",
+    jobTitle: "Frontend developer",
     id: "fichap-web",
     type: "web",
     logo: require("../assets/fichap-logo.svg").default,
@@ -95,6 +118,7 @@ export const proyectos = [
   },
   {
     name: "eon6 Panel Admin",
+    jobTitle: "Fullstack developer",
     id: "eon6-panel-admin",
     type: "web",
     logo: require("../assets/Eon6-logo.png"),
@@ -123,6 +147,7 @@ export const proyectos = [
   },
   {
     name: "La Corriente",
+    jobTitle: "Fullstack developer mobile",
     id: "la-corriente",
     type: "mobile",
     logo: require("../assets/la-corriente.png"),
@@ -145,6 +170,7 @@ export const proyectos = [
   },
   {
     name: "Prometeo ERP",
+    jobTitle: "Frontend developer",
     id: "prometeo-erp",
     type: "web",
     logo: require("../assets/logo-prometeo.svg").default,
@@ -167,6 +193,7 @@ export const proyectos = [
   },
   {
     name: "Gulf App",
+    jobTitle: "Frontend developer",
     id: "gulf-app",
     type: "mobile",
     logo: require("../assets/gulf.jpg"),
