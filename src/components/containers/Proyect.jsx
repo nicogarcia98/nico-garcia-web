@@ -32,7 +32,7 @@ export default function Proyect() {
 
   return (
     <Container
-      style={{
+      sx={{
         display: "flex",
         justifyContent: "center",
         height: "calc(100% - 80px)",
@@ -118,9 +118,10 @@ export default function Proyect() {
           <div
             className={`images ${proyect?.type == "mobile" ? "mobile" : "web"}`}
           >
-            {proyect?.images.map((img) => {
+            {proyect?.images.map((img, index) => {
               return (
                 <img
+                  key={`img-${index}`}
                   src={img}
                   style={{
                     maxWidth: "300px",
